@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@300;400;500&display=swap");
+body {
+  font-size: 15px;
+  background-color: #090b1a;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "hero" "textContent";
+  margin: 88px 24px 0px 24px;
+  background-color: #1b1938;
+  border-radius: 8px;
+}
+
+.hero-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hero;
+  background: url("../images/image-header-mobile.jpg") #aa5cdb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 240px;
+  background-blend-mode: multiply;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.slogan {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slogan span {
+  color: #aa5cdb;
+}
+
+article {
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: textContent;
+  margin: 40px 32px 32px 32px;
+}
+
+article p:nth-child(2) {
+  opacity: 0.75;
+  line-height: 25px;
+}
+
+aside {
+  display: inline-block;
+}
+
+aside section {
+  margin: 24px 0rem 24px 0rem;
+}
+
+aside section .stat {
+  font-size: 24px;
+}
+
+aside section .description {
+  font-size: 12px;
+}
+
+.stat {
+  font-weight: 700;
+  display: block;
+}
+
+.description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+    font-size: 15px;
+    background-color: #090b1a;
+    height: 100vh;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+  main {
+    margin: 177px auto 177px auto;
+    display: -ms-grid;
+    display: grid;
+    max-width: 1110px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "textContent hero";
+  }
+  article {
+    text-align: left;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: textContent;
+    margin: 71px auto 59px auto;
+    max-width: 70%;
+  }
+  article .slogan {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  article p:nth-child(2) {
+    opacity: 0.75;
+    margin-bottom: 72px;
+    line-height: 25px;
+  }
+  article aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  article aside section {
+    margin: 0rem 0rem 0px 0rem;
+  }
+  article aside section .stat {
+    font-size: 24px;
+  }
+  .hero-image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: hero;
+    background: url("../images/image-header-mobile.jpg") #aa5cdb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 0px 8px 8px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

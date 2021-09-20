@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@300;400;500&display=swap");
+
+@import "./variables.scss";
+
+body {
+  font-size: $base-font-size;
+  background-color: $base-main;
+  color: $text-color;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  // font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "hero" "textContent";
+  margin: 88px 24px 0px 24px;
+  // min-width: $mobile-width;
+  background-color: $base-card;
+  border-radius: 8px;
+}
+
+.hero-image {
+  grid-area: hero;
+  background: url("../images/image-header-mobile.jpg") $base-accent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 240px;
+  background-blend-mode: multiply;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.slogan {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+  span {
+    color: $base-accent;
+  }
+}
+
+// Article
+
+article {
+  text-align: center;
+  grid-area: textContent;
+  margin: 40px 32px 32px 32px;
+
+  p:nth-child(2) {
+    opacity: 0.75;
+    line-height: 25px;
+  }
+}
+
+aside {
+  display: inline-block;
+
+  section {
+    margin: 24px 0rem 24px 0rem;
+    .stat {
+      font-size: 24px;
+    }
+    .description {
+      font-size: 12px;
+    }
+  }
+}
+
+.stat {
+  font-weight: 700;
+  display: block;
+}
+
+.description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 376px) {
+}
+
+@media screen and (min-width: $mobile-width + 1) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+    font-size: $base-font-size;
+    background-color: $base-main;
+    height: 100vh;
+    color: $text-color;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    // font-family: "Lexend Deca", sans-serif;
+  }
+
+  main {
+    margin: 177px auto 177px auto;
+    display: grid;
+    max-width: 1110px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "textContent hero";
+  }
+
+  article {
+    text-align: left;
+    grid-area: textContent;
+    margin: 71px auto 59px auto;
+    max-width: 70%;
+
+    .slogan {
+      font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    p:nth-child(2) {
+      opacity: 0.75;
+      margin-bottom: 72px;
+      line-height: 25px;
+    }
+    aside {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      section {
+        margin: 0rem 0rem 0px 0rem;
+        .stat {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .hero-image {
+    grid-area: hero;
+    background: url("../images/image-header-mobile.jpg") $base-accent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 0px 8px 8px 0px;
+  }
+}

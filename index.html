@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin: 2rem 0rem 2rem 0rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-  Get insights that help your business grow.
+  <body>
+    <main>
+      <article>
+        <p class="slogan">Get <span>insights</span> that help your business grow.</p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+        <aside>
+          <section><span class="stat">10k+</span> <span class="description">companies</span></section>
+          <section><span class="stat">314</span> <span class="description">templates</span></section>
+          <section><span class="stat">12m+</span> <span class="description">queries</span></section>
+        </aside>
+      </article>
+      <section class="hero-image">
+        <!-- <picture>
+          <source media="(min-width: 376px)" srcset="./images/image-header-desktop.jpg" />
+          <img src="./images/image-header-mobile.jpg" alt="Businesswomen sitting on a desk, working and laughing." />
+        </picture> -->
+      </section>
+    </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://emre.ca">Emre</a>.
+    </footer>
+  </body>
 </html>
